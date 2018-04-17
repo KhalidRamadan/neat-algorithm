@@ -110,6 +110,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ConnectionGene.cpp" />
+    <ClCompile Include="Genome.cpp" />
+    <ClCompile Include="NodeGene.cpp" />
+    <ClCompile Include="test.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ConnectionGene.hpp" />
+    <ClInclude Include="Genome.hpp" />
+    <ClInclude Include="neatalgorithm.hpp" />
+    <ClInclude Include="NodeGene.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
