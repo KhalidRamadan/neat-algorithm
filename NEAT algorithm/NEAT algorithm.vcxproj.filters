@@ -32,6 +32,9 @@
     <ClCompile Include="Fitness.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Pool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Genome.hpp">
@@ -50,6 +53,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Fitness.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Pool.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -115,6 +115,7 @@
     <ClCompile Include="Genome.cpp" />
     <ClCompile Include="NodeGene.cpp" />
     <ClCompile Include="maintest.cpp" />
+    <ClCompile Include="Pool.cpp" />
     <ClCompile Include="Species.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -123,6 +124,7 @@
     <ClInclude Include="Genome.hpp" />
     <ClInclude Include="neatalgorithm.hpp" />
     <ClInclude Include="NodeGene.hpp" />
+    <ClInclude Include="Pool.hpp" />
     <ClInclude Include="Species.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
