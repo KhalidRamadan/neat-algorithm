@@ -16,7 +16,7 @@ namespace NEAT
 
 	private:
 		TYPE m_type;
-		int m_id;
+		int m_id; // unique
 
 	public:
 		NodeGene(TYPE type, int id);
