@@ -14,6 +14,7 @@ namespace NEAT
 		int m_innovation; // unique
 
 	public:
+		ConnenctionGene();
 		ConnenctionGene(int inNode, int outNode, double weight, bool expressed, int innovation);
 
 		// getters

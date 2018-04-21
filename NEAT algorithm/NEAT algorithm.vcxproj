@@ -122,7 +122,7 @@
     <ClInclude Include="ConnectionGene.hpp" />
     <ClInclude Include="Fitness.hpp" />
     <ClInclude Include="Genome.hpp" />
-    <ClInclude Include="neatalgorithm.hpp" />
+    <ClInclude Include="neat.hpp" />
     <ClInclude Include="NodeGene.hpp" />
     <ClInclude Include="Pool.hpp" />
     <ClInclude Include="Species.hpp" />
