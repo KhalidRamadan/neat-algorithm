@@ -26,7 +26,7 @@ namespace NEAT
 		NodeGene(TYPE type, int id);
 		inline TYPE getType() const { return m_type; }
 		inline int getId() const { return m_id; }
-		inline int getValue() const { return m_value; }
+		inline double getValue() const { return m_value; }
 	};
 
 }

@@ -41,22 +41,22 @@ namespace NEAT
 	{
 	}
 
+
+
+	// parent1 fitness > parent2 fintness
 	Genome Genome::crossover(const Genome & parent1, const Genome & parent2)
 	{
-		//if (parent1.getFitness() < parent2.getFitness)
-			//std::swap(parent1, parent2);
-
-		Genome child();
+		Genome child = parent1;
 
 
-		return Genome();
+		return child;
 	}
 
 	double Genome::compatibilityDistance(const Genome & genome1, const Genome & genome2)
 	{
 		int excessGenes = countExcessGenes(genome1, genome2);
 		int disjointGenes = countDisjointGenes(genome1, genome2);
-		float avgWeightDiff = averageWeightDiff(genome1, genome2);
+		double avgWeightDiff = averageWeightDiff(genome1, genome2);
 
 		return excessGenes * DELTA_EXCESS + disjointGenes * DELTA_DISJOINT + avgWeightDiff * DELTA_WEIGHTS;
 	}

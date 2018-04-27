@@ -1,7 +1,11 @@
 #pragma once
+
+
 #include<cmath>
 #include<random>
-
+#include <cstdlib>
+#include <iostream>
+#include <ctime>
 
 namespace NEAT
 {
@@ -28,18 +32,34 @@ namespace NEAT
 	static const double PerturbChance = 0.90;
 	static const double CrossoverChance = 0.75;
 
-	
-		
-		
-		
-		
-		
-		
-		
-		
-	static bool RandomBool(double problemalty)
+	static bool callRandom = false;
+
+	static void Random() 
 	{
+		if (callRandom) return;
+		callRandom = true;
+		std::srand((unsigned int)std::time(nullptr));
+	}
 		
+	static bool RandomBool(double probability = 0.5f) // probability of true
+	{
+		Random();
+		int randomInt = std::rand();
+		//std::cout << randomInt << std::endl;
+		double random = (double)randomInt / RAND_MAX;
+		
+		if (random <= probability)
+			return true;
+		else return false;
+	}
+
+
+	static int RandomRange(int x = 1, int y = 100)
+	{
+		Random();
+		int randomInt = std::rand();
+		int range = y - x + 1;
+		return (randomInt % range) + x;
 	}
 
 	static double sigmoid(double value)
